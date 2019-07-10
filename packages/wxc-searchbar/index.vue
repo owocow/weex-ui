@@ -93,7 +93,7 @@
     height: 64px;
     line-height: 64px;
     background-color: #E5E5E5;
-    border-radius: 6px;
+    border-radius: 32px;
   }
 
   .search-bar-input-yellow {
