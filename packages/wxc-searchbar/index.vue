@@ -18,7 +18,7 @@
              ref="search-input"
              :type="inputType"
              :placeholder="placeholder"
-             :style="{ width: needShowCancel ? '624px' : '710px' }"
+             :style="{ width: needShowCancel ? '600px' : '690px' }"
              :class="['search-bar-input','search-bar-input-'+theme]" />
       <div v-if="disabled"
            @click="inputDisabledClicked"
@@ -69,11 +69,11 @@
 
 <style scoped>
   .wxc-search-bar {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     background-color: #ffffff;
     width: 750px;
-    height: 84px;
+    height: 88px;
     flex-direction: row;
   }
 
@@ -83,17 +83,18 @@
 
   .search-bar-input {
     position: absolute;
-    top: 10px;
+    top: 16px;
     padding-top: 0;
     padding-bottom: 0;
     padding-right: 40px;
-    padding-left: 60px;
+    padding-left: 64px;
     font-size: 26px;
-    width: 624px;
-    height: 64px;
-    line-height: 64px;
-    background-color: #E5E5E5;
+    width: 600px;
+    height: 56px;
+    line-height: 56px;
+    background-color: #F1F3F6;
     border-radius: 32px;
+    color: #1F2021;
   }
 
   .search-bar-input-yellow {
@@ -104,7 +105,7 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    left: 34px;
+    left: 50px;
     top: 28px;
   }
 
@@ -112,8 +113,9 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    right: 120px;
+    right: 140px;
     top: 28px;
+    opacity: .4;
   }
 
   .search-bar-button {
@@ -124,7 +126,7 @@
     background-color: #ffffff;
     margin-top: 16px;
     margin-right: 0;
-    color: #333333;
+    color: #1574DF;
     position: absolute;
     right: 8px;
     top: 9px;
