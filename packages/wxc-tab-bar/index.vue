@@ -12,7 +12,7 @@
       </div>
     </div>
     <div class="tab-title-list"
-         :style="{ backgroundColor: tabStyles.bgColor, height: (tabStyles.height + (isIPhoneX ? 78 : 0))+'px',paddingBottom:isIPhoneX?'78px':'0'}">
+         :style="{ backgroundColor: tabStyles.bgColor, height: tabStyles.height+'px'}">
       <div class="title-item"
            v-for="(v,index) in tabTitles"
            :key="index"
@@ -23,6 +23,7 @@
            :aria-label="`${v.title?v.title:'标签'+index}`">
 
         <image :src="currentPage == index ? v.activeIcon : v.icon"
+              class="icon-title"
                v-if="titleType === 'icon' && !titleUseSlot"
                :style="{ width: tabStyles.iconWidth + 'px', height:tabStyles.iconHeight+'px'}"></image>
 
@@ -52,6 +53,8 @@
   }
 
   .tab-title-list {
+    border-top-width: 1px;
+    border-top-color: #E9EDF0;
     flex-direction: row;
     justify-content: space-around;
   }
@@ -94,7 +97,9 @@
     padding-left: 6px;
     padding-right: 6px;
   }
-
+  .icon-title {
+    margin-bottom: 4px;
+  }
   .dot {
     width: 12px;
     height: 12px;
@@ -107,7 +112,6 @@
     right: 40px;
     background-color: #FF5E00;
   }
-
   .desc-text {
     font-size: 18px;
     color: #ffffff;
