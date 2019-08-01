@@ -31,7 +31,7 @@
               :style="{fontFamily: 'wxcIconFont',fontSize: tabStyles.iconFontSize+'px', marginBottom:tabStyles.iconFontMarginBottom ? (tabStyles.iconFontMarginBottom +'px') : '8px', color: currentPage == index ? tabStyles.activeIconFontColor : tabStyles.iconFontColor}">{{v.codePoint}}</text>
         <text
           v-if="!titleUseSlot"
-          :style="{ fontSize: tabStyles.fontSize+'px', fontWeight: (currentPage == index && tabStyles.isActiveTitleBold)? 'bold' : 'normal', color: currentPage == index ? tabStyles.activeTitleColor : tabStyles.titleColor, paddingLeft:tabStyles.textPaddingLeft+'px', paddingRight:tabStyles.textPaddingRight+'px'}"
+          :style="{ fontSize: tabStyles.fontSize+'px', color: currentPage == index ? tabStyles.activeTitleColor : tabStyles.titleColor, paddingLeft:tabStyles.textPaddingLeft+'px', paddingRight:tabStyles.textPaddingRight+'px'}"
           class="tab-text">{{v.title}}</text>
         <div class="desc-tag" v-if="v.badge && !titleUseSlot">
           <text class="desc-text">{{v.badge}}</text>
