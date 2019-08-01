@@ -75,6 +75,8 @@
     flex: 1;
     flex-direction: row;
     position: absolute;
+    top: 0;
+    bottom: 98px;
   }
 
   .tab-text {
