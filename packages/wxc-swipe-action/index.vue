@@ -52,7 +52,7 @@
 } */
 
 .swipe-action-child {
-  width: 100px;
+  width: 200px;
   text-align: center;
   color: #FFFFFF;
   background-color: #dddddd;
