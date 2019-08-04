@@ -3,7 +3,7 @@
 
 <template>
 <div class="container">
-  <div ref="skid" v-for="(item, i) of data" @click="onNodeClick(item, i)" :key="'skid-' + i" class="wxc-skid" :style="{width: (750 + item.right.length * 200) + 'px', height: height + 'px'}" @touchstart="(e) => !isAndroid && onPanStart(e, item, i)" @horizontalpan="(e) => isAndroid && onPanStart(e, item, i)" @touchend="(e) => onPanEnd(e, item, i)">
+  <div ref="skid" v-for="(item, i) of data" @click="onNodeClick(item, i)" :key="'skid-' + i" class="wxc-skid" :style="{width: '1050px', height: height + 'px'}" @touchstart="(e) => !isAndroid && onPanStart(e, item, i)" @horizontalpan="(e) => isAndroid && onPanStart(e, item, i)" @touchend="(e) => onPanEnd(e, item, i)">
     <div :style='styles' class="swipe-action-center border">
       <slot :val='{item: item, index: i}'/>
     </div>
@@ -168,7 +168,7 @@ export default {
     },
     movingDistance(scope, node, el) {
       const len = node.right ? node.right.length : 0;
-      const distance = len * -200;
+      const distance = -300;
       if (scope < -30) {
         this.special(el, {
           transform: `translate(${distance}px, 0)`
