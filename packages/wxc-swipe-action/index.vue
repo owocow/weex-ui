@@ -17,13 +17,11 @@
 
 <style scoped>
 .container {
-  background-color: #dddddd;
-  border-top-width: 1px;
-  border-top-color: #dddddd;
+  background-color: #B6BAC0;
 }
 .border {
   border-bottom-width: 1px;
-  border-bottom-color: #dddddd;
+  border-bottom-color: #D9DCE0;
 }
 .wxc-skid {
   flex-direction: row;
