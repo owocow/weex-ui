@@ -236,7 +236,7 @@
 </script>
 <style scoped>
   .wxc-page-calendar {
-    position: fixed;
+    position: absolute;
     width: 750px;
     color: #333333;
     background-color: #ffffff;
