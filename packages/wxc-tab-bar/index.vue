@@ -105,10 +105,10 @@
     height: 14px;
     border-bottom-right-radius: 12px;
     border-bottom-left-radius: 12px;
-    border-widhth: 2px;
-    border-color: #ffffff;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+    border-width: 2px;
+    border-color: #ffffff;
     position: absolute;
     top: 10px;
     right: 50px;
