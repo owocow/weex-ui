@@ -101,16 +101,16 @@
     margin-bottom: 4px;
   }
   .dot {
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     border-bottom-right-radius: 12px;
     border-bottom-left-radius: 12px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     position: absolute;
     top: 10px;
-    right: 40px;
-    background-color: #FF5E00;
+    right: 50px;
+    background-color: #E64D55;
   }
   .desc-text {
     font-size: 18px;
