@@ -98,7 +98,7 @@
     padding-right: 6px;
   }
   .icon-title {
-    margin-bottom: 4px;
+    margin-bottom: 10px;
   }
   .dot {
     width: 14px;
