@@ -68,6 +68,7 @@
   .tab-page-wrap {
     width: 750px;
     flex: 1;
+    background-color: #0066ff;
     /* overflow: hidden; */
   }
 
@@ -76,6 +77,7 @@
     flex-direction: row;
     position: absolute;
     align-items: stretch;
+    background-color: #1199ff;
   }
 
   .tab-text {
