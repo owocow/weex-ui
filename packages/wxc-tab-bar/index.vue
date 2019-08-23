@@ -74,8 +74,9 @@
   .tab-container {
     flex: 1;
     flex-direction: row;
+    position: absolute;
     align-items: stretch;
-    background-color: red;
+    background-color: #ff0000;
   }
 
   .tab-text {
