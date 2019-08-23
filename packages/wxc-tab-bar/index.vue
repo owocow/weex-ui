@@ -72,11 +72,9 @@
   }
 
   .tab-container {
-    flex: 1;
     flex-direction: row;
     position: absolute;
     align-items: stretch;
-    background-color: #ff0000;
     top: 0;
     bottom: 0;
   }
