@@ -18,7 +18,7 @@
              ref="search-input"
              :type="inputType"
              :placeholder="placeholder"
-             :style="{ width: needShowCancel ? '600px' : '690px' }"
+             :style="{ width: needShowCancel ? '600px' : '690px', borderRadius: radius}"
              :class="['search-bar-input','search-bar-input-'+theme]" />
       <div v-if="disabled"
            @click="inputDisabledClicked"
@@ -245,6 +245,14 @@
       depName: {
         type: String,
         default: '杭州'
+      },
+      radius: {
+        type: String,
+        default: '32px'
+      },
+      cancelTextColor: {
+        type: String,
+        default: '#1574DF'
       }
     },
     computed: {
@@ -254,7 +262,7 @@
       buttonStyle() {
         const { barStyle } = this;
         if (barStyle.backgroundColor) {
-          return { backgroundColor: barStyle.backgroundColor }
+          return { backgroundColor: barStyle.backgroundColor, color: barStyle.cancelTextColor }
         }
         return {}
       }
