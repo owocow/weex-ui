@@ -262,7 +262,7 @@
       buttonStyle() {
         const { barStyle } = this;
         if (barStyle.backgroundColor) {
-          return { backgroundColor: barStyle.backgroundColor, color: barStyle.cancelTextColor }
+          return { backgroundColor: barStyle.backgroundColor, color: this.cancelTextColor }
         }
         return {}
       }
