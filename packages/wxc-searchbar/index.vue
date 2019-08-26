@@ -18,7 +18,7 @@
              ref="search-input"
              :type="inputType"
              :placeholder="placeholder"
-             :style="{ width: needShowCancel ? '600px' : '690px', borderRadius: radius}"
+             :style="{ width: needShowCancel ? '600px' : '690px', borderRadius: radius, backgroundColor: inputBgColor}"
              :class="['search-bar-input','search-bar-input-'+theme]" />
       <div v-if="disabled"
            @click="inputDisabledClicked"
@@ -253,6 +253,10 @@
       cancelTextColor: {
         type: String,
         default: '#1574DF'
+      },
+      inputBgColor: {
+        type: String,
+        default: '#F1F3F6'
       }
     },
     computed: {
