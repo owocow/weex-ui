@@ -6,6 +6,7 @@
   <div>
     <wxc-radio v-for="(item,i) in updateList"
                :config="config"
+               :cell-style="cellStyle"
                v-bind="item"
                @wxcRadioItemChecked="wxcRadioItemChecked(i,$event)"
                :key="i"></wxc-radio>
@@ -27,6 +28,10 @@
         default: () => ([])
       },
       config: {
+        type: Object,
+        default: () => ({})
+      },
+      cellStyle: {
         type: Object,
         default: () => ({})
       }
