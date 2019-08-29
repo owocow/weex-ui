@@ -3,7 +3,7 @@
 
 <template>
   <wxc-cell :has-top-border="hasTopBorder"
-            :cell-style="{backgroundColor:backgroundColor}"
+            :cell-style="cellStyle"
             @wxcCellClicked="wxcCellClicked"
             :accessible="true"
             :aria-label="`${title},状态为${checked?'已选中':'未选中'},${disabled?'不可更改':''}`">
@@ -58,6 +58,10 @@
         default: false
       },
       config: {
+        type: Object,
+        default: () => ({})
+      },
+      cellStyle: {
         type: Object,
         default: () => ({})
       }
